@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      padding: 2rem;
+    }
+
+    #container {
+      display: grid;
+      width: 40rem;
+      height: 60rem;
+      padding: 2.5rem;
+      border-radius: 2rem;
+      background: white;
+      grid-template-columns: repeat(auto, 7);
+      /* grid-template-columns: auto auto auto auto; */
+      /* grid-template-rows: repeat(auto, 7); */
+      gap: 1rem;
+      opacity: 0.5;
+    }
+    
+    .item {
+      display: flex;
+      background: black;
+      border-radius: 2rem;
+      opacity: .8;
+      font-size: 2rem;
+      align-items: center;
+      color: blue;
+      justify-content: center;
+      box-shadow: 4px 4px #b6abab, -4px -4px #e7e2e2;
+    }
+
+    .one, .two {
+      padding: 2rem;
+      grid-row: 1/span 2;
+      justify-content: flex-start;
+    }
+
+    .one {
+      grid-column: 1/span 2;
+      grid-row: 1/span 2;
+    }
+
+    .two {
+      grid-column: 3/span 2;
+    }
+
+    .three {
+      grid-row: 3/span 2;
+      grid-column: 3;
+      padding-bottom: 2rem;
+      align-items: flex-end;
+    }
+
+    .four {
+      grid-row: 3/span 2;
+      grid-column: 4;
+      align-items: flex-end;
+      padding-bottom: 2rem;
+    }
+
+    .five {
+      grid-column: 1/span 2;
+      justify-content: flex-start;
+      padding-left: 2rem;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="new-container"></div>
+  <div id="container">
+    <div class="item one"></div>
+    <div class="item two">2</div>
+    <div class="item"></div>
+    <div class="item">4</div>
+    <div class="item three">5</div>
+    <div class="item four">6</div>
+    <div class="item five">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item">15</div>
+    <div class="item">16</div>
+    <div class="item">17</div>
+  </div>
+</body>
+</html>
